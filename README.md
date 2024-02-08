@@ -39,13 +39,29 @@ npm test
 ### 3. Deploy the Contract
 Build the contract and deploy it in a testnet account
 ```bash
-npm run deploy
+./build.sh
 ```
 
-### 4. Start the Frontend
-Start the web application to interact with your smart contract 
+### 4. Get Messages
+
 ```bash
-npm start
+near view librovisitas1.testnet get_messages '{"from_index":0, "limit":10}'
+```
+
+## 5. Add New Message
+
+```bash
+near call librovisitas1.testnet add_message '{"text": "Primer mensaje"}' --accountId yairnava.testnet
+```
+
+```bash
+near call owaguestbook.testnet add_message '{"text": "Primer mensaje premium"}' --amount 0.1 --accountId yairnava.testnet
+```
+
+## 6. Get Total Messages
+
+```bash
+near view guestbook1.testnet total_messages
 ```
 
 ---
