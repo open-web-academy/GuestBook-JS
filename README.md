@@ -45,13 +45,13 @@ Build the contract and deploy it in a testnet account
 ### 4. Get Messages
 
 ```bash
-near view librovisitas1.testnet get_messages '{"from_index":0, "limit":10}'
+near view librovisitas.testnet get_messages '{"from_index":0, "limit":10}'
 ```
 
 ## 5. Add New Message
 
 ```bash
-near call librovisitas1.testnet add_message '{"text": "Primer mensaje"}' --accountId yairnava.testnet
+near call librovisitas.testnet add_message '{"text": "Primer mensaje"}' --accountId yairnava.testnet
 ```
 
 ```bash
