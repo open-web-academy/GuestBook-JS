@@ -39,7 +39,7 @@ npm test
 ### 3. Deploy the Contract
 Build the contract and deploy it in a testnet account
 ```bash
-./build.sh
+./deploy.sh
 ```
 
 ### 4. Get Messages
