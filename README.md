@@ -39,8 +39,14 @@ npm test
 ### 3. Deploy the Contract
 Build the contract and deploy it in a testnet account
 ```bash
-./deploy.sh
+npm run build
+
+near deploy account_name.testnet contract/build/contract.wasm
 ```
+
+
+
+
 
 ### 4. Get Messages
 
